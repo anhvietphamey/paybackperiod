@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Payback Period</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<script type="text/javascript" src="javascript\main.js" charset="utf-8"></script>
+</head>
+
+<body>
+ 
+  <div class="">
+
+  </div>
+  <div class="container mx-auto">
+    <h1 class="mx-auto">Payback Period of a Project</h1>
+    <h4>Enter cashflow of each period:</h4>
+    <table id="payback">
+      <tr>
+        <td>Period</td><td>Cash Flow</td><td>Cumulative</td>
+      </tr>
+      <tr>
+    <td><label for="period-1">0</label></td>
+    <td><input type="number" id="period0" name="" value="-100" ></td>
+    <td><input type="number" id="cumulative0" name="" value="" readonly="true" disabled="true"></td>
+      </tr>
+      <tr>
+        <td><label for="">1</label></td>
+        <td><input type="number" id="period1" value="30"></td>
+        <td><input type="number" id="cumulative1" value="" readonly="true" disabled="true"></td>
+      </tr>
+      <tr>
+        <td><label for="">2</label></td>
+        <td><input type="number" id="period2" value="20"></td>
+        <td><input type="number" id="cumulative2" value="" readonly="true" disabled="true"></td>
+      </tr>
+      <tr>
+        <td><label for="">3</label></td>
+        <td><input type="number" id="period3" value="35"></td>
+        <td><input type="number" id="cumulative3" value="" readonly="true" disabled="true"></td>
+      </tr>
+    </table>
+    <table id="result-table">
+      <tr>
+        <td>Payback periods:</td>
+        <td><input id="result-cell" type="text" name="result" disabled="true" onload="calc"></td>
+      </tr>
+    </table>
+
+</div>
+<div class="container">
+<button type="button" id="decBtn" name="declinePeriod" class="btn btn-danger">Period-</button>
+<button type="button" id="calc" name="calculate" class="btn btn-primary">Calculate</button>
+<button type="button" id="addBtn" class="btn btn-success">Period+</button>
+  </div>
+
+</body>
+
+</html>
