@@ -9,6 +9,7 @@ onload = function() {
   }
   usage.addEventListener("keyup",calcElectricCost);
   usage.addEventListener("change",calcElectricCost);
+  usage.addEventListener("focus",onFocus);
 }
 
 var quantityRange = [0,50,100,200,300,400];
@@ -40,3 +41,4 @@ function calcElectricCost(){
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+function onFocus(){this.value = "";}
